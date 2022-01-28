@@ -6,6 +6,5 @@ public class Main {
         long l = 129;
         byte b = (byte) l;
         System.out.println(b);
-       // System.out.println(d);
     }
 }
