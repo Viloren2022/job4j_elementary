@@ -40,7 +40,7 @@ public class PointTest {
     }
 
     @Test
-    public void when13to68then7() {
+    public void when13to68then707() {
         double expected = 7.07;
         int x1 = 1;
         int y1 = 3;
