@@ -24,7 +24,7 @@ public class DummyBotTest {
     public void whenUnknownBot() {
         String in = "Сколько будет 2 + 2?";
         String result = DummyBot.answer(in);
-        String expected = "Это ставит меня в тупик. Задайте другой вопрос.";
+        String expected = "Это ставит меня в тупик. Задайте другой вопрос!";
         Assert.assertEquals(expected, result);
     }
 }
