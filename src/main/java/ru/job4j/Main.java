@@ -2,9 +2,10 @@ package ru.job4j;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello Marat");
-        long l = 129;
-        byte b = (byte) l;
-        System.out.println(b);
+        int k = 0;
+        for (int i = 0; i < 10; i++) {
+            k = k++;
+        }
+        System.out.println(k);
     }
 }
