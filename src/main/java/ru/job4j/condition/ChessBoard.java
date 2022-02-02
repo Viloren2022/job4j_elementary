@@ -4,8 +4,8 @@ public class ChessBoard {
 
     public static int way(int x1, int y1, int x2, int y2) {
         int rsl = 0;
-        if (isValid(x1) && isValid(x2) && isValid(y1) && isValid(y2) && y2 > x2) {
-            if (x1 != x2  || y1 != y2) {
+        if (isValid(x1) && isValid(x2) && isValid(y1) && isValid(y2)) {
+            if (Math.abs(x2 - x1) == Math.abs(y2 - y1)) {
                 rsl = Math.abs((x2 - x1));
                 System.out.println(rsl);
                 rsl = rsl == 0 ? Math.abs(y2 - y1) : rsl;
@@ -21,7 +21,5 @@ public class ChessBoard {
 
     public static void main(String[] args) {
         System.out.println(ChessBoard.way(2, 6, 4, 1));
-        //System.out.println(ChessBoard.way(0, 0, 9, 0));
-        //System.out.println(ChessBoard.way(0, 0, 5, 6));
     }
 }
