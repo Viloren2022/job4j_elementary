@@ -16,6 +16,7 @@ public class DivideBySix {
                 rsl = "Исходное число не делится на 3 и не является четным.";
             }
         }
+
         return rsl;
     }
 }
