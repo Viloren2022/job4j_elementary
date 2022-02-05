@@ -15,5 +15,6 @@ public class ArithmeticActions {
         } else {
             return "none";
         }
+
     }
 }
