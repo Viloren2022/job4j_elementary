@@ -3,7 +3,6 @@ package ru.job4j.loop;
 public class Slash {
     public static void draw(int size) {
         for (int row = 0; row < size; row++) {
-            // 0 + 0
             for (int cell = 0; cell < size; cell++) {
                 boolean left = row - cell == 0;
                 boolean right = row + cell + 1 == size;
