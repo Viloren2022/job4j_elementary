@@ -16,11 +16,11 @@ public class SwitchArrayTest {
 
     @Test
     public void whenSwap1to2() {
-        int[] input = {1, 2, 3, 4, 5};
+        int[] input = {1, 2, 3, 4, 5, 6};
         int source = 1;
-        int dest = input.length - 2;
+        int dest = input.length - 3;
         int[] result = SwitchArray.swap(input, source, dest);
-        int[] expected = {1, 4, 3, 2, 5};
+        int[] expected = {1, 4, 3, 2, 5, 6};
         Assert.assertArrayEquals(expected, result);
     }
 }
