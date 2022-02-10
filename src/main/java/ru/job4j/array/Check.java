@@ -2,8 +2,8 @@ package ru.job4j.array;
 
 public class Check {
     public static boolean mono(boolean[] data) {
-        for (int index = 0; index < data.length; index++) {
-            if (data[0] != data[index]) {
+        for (int i = 0; i< data.length; i++) {
+            if (data[0] != data[i]) {
                 return false;
             }
         }
