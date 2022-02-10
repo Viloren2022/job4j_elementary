@@ -1,8 +1,15 @@
 package ru.job4j.array;
 
 public class ArrayChar {
-    public static boolean startWith(char[] word, char[] pref) {
+    public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
-        return true;
+        for (int i = 0; i <= pref.length - 1; i++) {
+            if (word[i] != pref[i]) {
+                result = false;
+            }
+        }
+        return result;
     }
+
 }
+
