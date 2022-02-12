@@ -23,7 +23,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind3() {
+    public void whenFind3Then2() {
         int[] data = new int[] {3, 2, 1};
         int el = 1;
         int start = 0;
