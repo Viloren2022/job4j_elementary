@@ -23,13 +23,24 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind3Then2() {
+    public void whenArrayHas1Then2() {
         int[] data = new int[] {3, 2, 1};
         int el = 1;
         int start = 0;
         int finish = 2;
         int result = FindLoop.indexOf(data, el, start, finish);
         int expected = 2;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenArrayHas3ThenMinus1() {
+        int[] data = new int[] {3, 2, 1};
+        int el = 3;
+        int start = 1;
+        int finish = 2;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = -1;
         Assert.assertEquals(expected, result);
     }
 }
