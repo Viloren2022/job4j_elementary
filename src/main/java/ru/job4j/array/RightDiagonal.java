@@ -5,7 +5,7 @@ public class RightDiagonal {
         int[] array = new int[data.length];
         int index = 0;
         for (int i = data.length - 1; i >= 0; i--) {
-            array[index++] = data[index][i];
+            array[index] = data[index][i];
             index++;
         }
         return array;
