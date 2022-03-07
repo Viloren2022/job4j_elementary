@@ -35,6 +35,5 @@ public class Point {
 
     public void info3d() {
         System.out.println("Point[" + this.x + ", " + this.y + ", " + this.z + "]");
-
     }
 }
